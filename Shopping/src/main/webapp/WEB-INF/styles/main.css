@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 5px 10px;
+}
+
+/* Dashboard Styles */
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    width: 45%;
+}
+
+.section h2 {
+    margin-top: 0;
+}
