@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.naveennk</groupId>
   <artifactId>Shopping</artifactId>
@@ -17,13 +17,21 @@
     <dependency>
 	    <groupId>redis.clients</groupId>
     	<artifactId>jedis</artifactId>
-    	<version>3.7.0</version> <!-- Or the latest version -->
+    	<version>3.7.0</version>
     </dependency>
 
   </dependencies>
 
 
   <build>
+  	<plugins>
+        <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.2</version>
+        </plugin>
+    </plugins>
     <finalName>Shopping</finalName>
+    
   </build>
 </project>
